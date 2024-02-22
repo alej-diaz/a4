@@ -59,7 +59,7 @@ merge_met_past <- function(target){
 ##' @param forecast_date start date of forecast
 ##' @return dataframe
 download_met_forecast <- function(forecast_date){
-  noaa_date <- forecast_date - lubridate::days(1)  #Need to use yesterday's NOAA forecast because today's is not available yet
+  noaa_date <- forecast_date - lubridate::days(2)  #Need to use yesterday's NOAA forecast because today's is not available yet
   
   ## connect to data
   df_future <- neon4cast::noaa_stage2(start_date = as.character(noaa_date))
