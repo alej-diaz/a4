@@ -1,4 +1,4 @@
-```{r}
+
 ##' run aquatic forecast into the future
 ##' @param model site-specific list of forecast models
 ##' @param met_forecast weather forecast dataframe
@@ -58,4 +58,3 @@ run_forecast <- function(model,met_forecast,site_data){
   
   return(forecast)
 }
-```
